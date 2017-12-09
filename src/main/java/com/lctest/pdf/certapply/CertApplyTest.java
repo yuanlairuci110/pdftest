@@ -130,7 +130,6 @@ public class CertApplyTest {
         }
         paramMap.put("qualifyChecklist",qualifyChecklist);
 
-
         List<ApplyField> applyFieldList = new ArrayList<>();
         ApplyField applyField = null;
         for(int i=0;i< 30;i++){
