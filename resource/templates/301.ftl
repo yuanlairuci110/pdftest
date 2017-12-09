@@ -26,14 +26,41 @@
             <tr><td>认证单位</td><td>${certificateOrgName}</td><td>认证发起人</td><td>${creatorName}</td></tr>
         </table>
     </div>
-
     </p>
+
     <p style="line-height:32px;text-indent:2em">
     <div>资质审核：</div>
     </p>
+    <p style="text-indent:2em">
+    <div style="padding-left:30px">
+        <table border="0.5">
+            <tr><td>资质项目</td><td>分级标准</td><td>资质情况</td><td>审核结果</td><td>备注</td></tr>
+        <#list qualifyChecklist as item>
+            <tr><td>${item.zzxm}</td><td>${item.fjbz}</td><td>${item.zzqk}</td><td>${item.shjg}</td><td>${item.bz}</td></tr>
+        </#list>
+        </table>
+    </div>
+    </p>
 
+    <p style="line-height:32px;text-indent:2em">
+    <div>现场认证：</div>
+    </p>
 
+    <p style="text-indent:2em">
+    <div style="padding-left:30px">
+        <table border="0.5">
+            <tr><td>行号</td><td>所属分类</td><td>指标名称</td><td>指标描述</td><td>评分依据</td><td>指标权重</td><td>认证</td></tr>
+        <#list applyFieldList as item>
+            <#if item_index%2==0 >
+                <tr><td>${item_index}</td><td>基数 ：111</td><td>${item.rbmc}</td><td>${item.zbms}</td><td>${item.pfyj}</td><td>${item.zbqz}</td><td>${item.rzh}</td></tr>
+            <#else>
+                <tr><td>${item_index}</td><td>偶数 ：${item.ssfl}</td><td>${item.rbmc}</td><td>${item.zbms}</td><td>${item.pfyj}</td><td>${item.zbqz}</td><td>${item.rzh}</td></tr>
+            </#if>
 
+        </#list>
+        </table>
+    </div>
+    </p>
 
 </div>
 </body>

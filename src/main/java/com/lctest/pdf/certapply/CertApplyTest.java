@@ -129,9 +129,20 @@ public class CertApplyTest {
             qualifyChecklist.add(qualifyCheck);
         }
         paramMap.put("qualifyChecklist",qualifyChecklist);
-        List<String> listData = new ArrayList<String>();
-        listData.add("AAAA");
-        paramMap.put("listData",listData);
+
+        List<ApplyField> applyFieldList = new ArrayList<>();
+        ApplyField applyField = null;
+        for(int i=0;i< 30;i++){
+            applyField = new ApplyField();
+            applyField.setSsfl("aaaa");
+            applyField.setRbmc("bbbb");
+            applyField.setZbms("cccc");
+            applyField.setPfyj("dddd");
+            applyField.setZbqz("eeee");
+            applyField.setRzh("ffff");
+            applyFieldList.add(applyField);
+        }
+        paramMap.put("applyFieldList",applyFieldList);
         contractHandler(templateName, paramMap);
     }
 }
