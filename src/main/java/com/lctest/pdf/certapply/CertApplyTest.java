@@ -101,29 +101,6 @@ public class CertApplyTest {
     public static void main(String[] args) throws Exception {
         String templateName = "301";
         Map<String, Object> paramMap = new HashMap<String, Object>();
-        paramMap.put("ZJHKZH", "271003********279975");
-        paramMap.put("KYYE", "79244.95");
-        paramMap.put("LXFS", "配置web.xml中LXFS属性，例如(张小凡，123,4567,8909)");
-        paramMap.put("KHWD", "123");
-        paramMap.put("CSKSRQ", "2016年10月31日00时00分");
-        paramMap.put("KSRQ", "2017-03-14");
-        paramMap.put("YE","94444.95");
-        paramMap.put("KHZH","271**********07279975");
-        paramMap.put("AH", "(2015)****字第0***0号");
-        paramMap.put("CKH", "(2017)法YH****9控字第*号");
-        paramMap.put("YDJAH", "(2015)***执字第00020号");
-        paramMap.put("KZCS", "01");
-        paramMap.put("XM", "張三豐");
-        paramMap.put("FYMC", "****人民法院");
-        paramMap.put("JSRQ", "2017-06-14");
-        paramMap.put("KZZT", "1");
-        paramMap.put("SE", "100");
-        paramMap.put("LCZH", "987234234");
-        paramMap.put("DATE", "2017年03月24日09时39分");
-        paramMap.put("CKWH", "(2015)*****字第0**20-1**0号裁定书");
-        paramMap.put("SKSE", "100");
-        paramMap.put("CSJSRQ", "2016年10月31日 00时00分");
-
         paramMap.put("code","RZRW201711010001");
         paramMap.put("bidProjectCode","1234565432");
         paramMap.put("supplierName","大连中晟联合国际物流有限公司");
