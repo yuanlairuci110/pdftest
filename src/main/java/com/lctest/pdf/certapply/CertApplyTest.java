@@ -37,15 +37,15 @@ public class CertApplyTest {
         }
         String localPdfUrl = localFile + "/" + PDFNAME + ".pdf";
         templateName=templateName+".ftl";
-        htmHandler(templatePath, templateName, localHtmlUrl, paramMap);// 生成html合同
-        pdfHandler(localHtmlUrl, localPdfUrl);// 根据html合同生成pdf合同
-        deleteFile(localHtmlUrl);// 删除html格式合同
+        htmHandler(templatePath, templateName, localHtmlUrl, paramMap);// 生成html
+        pdfHandler(localHtmlUrl, localPdfUrl);// 根据html合同生成pdf
+        deleteFile(localHtmlUrl);// 删除html格式
 
         System.out.println("PDF生成成功");
     }
 
     /**
-     * 生成html格式合同
+     * 生成html格式
      */
     private static void htmHandler(String templatePath, String templateName,
                                    String htmUrl, Map<String, Object> paramMap) throws Exception {
@@ -65,7 +65,7 @@ public class CertApplyTest {
     }
 
     /**
-     * 生成pdf格式合同
+     * 生成pdf格式
      */
     private static void pdfHandler(String htmUrl, String pdfUrl)
             throws DocumentException, IOException {
